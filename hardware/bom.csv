@@ -1,10 +1,15 @@
-Part, Purpose, Qty, Notes
-ESP32 DevKit V1, Microcontroller ("brain"), 1, Built-in Bluetooth + Wi-Fi
-WS2812B or SK6812 LED strip, Addressable lights above keys, 1 roll, 5 V 60 LED/m (match keyboard length)
-5 V USB power bank (≥2 A), Power source, 1, Re-use any phone charger pack
-Electrolytic capacitor 1000–2200 µF 6.3 V+, Power stabilizer, 1, Across +5 V and GND near LED input
-Breadboard + jumper wires, Easy wiring, 1 set, Optional but handy
-Micro-USB or USB-C cable, Programming + power, 1, Matches your ESP32 port
-Diffuser channel / clear rail, Even lighting over keys, 1 set, Optional aesthetic
-INMP441 I²S microphone, Sound detection (reac­tive mode), 1, Optional for later version
-Foam tape / low-tack adhesive, Mount LED strip safely, 1 roll, Protects keyboard surface
+# KeyNova — Bill of Materials (BOM)
+
+| # | Part | Purpose | Qty | Notes |
+|---|------|---------|-----|-------|
+| 1 | **ESP32 DevKit V1** | Microcontroller “brain” | 1 | Built-in Bluetooth; easy to program with Arduino IDE |
+| 2 | **WS2812B / SK6812 LED strip (5V, 60 LED/m)** | Addressable lights above keys | 1 roll | Match length to keyboard (61 or 88 keys); limit brightness to ~30–40% |
+| 3 | **5V USB power bank (≥2A)** | Power source | 1 | Phone power bank is fine |
+| 4 | **Electrolytic capacitor 1000–2200 µF (≥6.3V)** | Power stabilization | 1 | Solder across +5V and GND near LED strip input |
+| 5 | **Breadboard + jumper wires** | Prototyping | 1 set | Helpful during first tests |
+| 6 | **USB cable (Micro-USB or USB-C)** | Programming + power | 1 | Match your ESP32 port |
+| 7 | **Diffuser channel / clear rail (optional)** | Even lighting & aesthetics | 1 set | Helps spread light over keys |
+| 8 | **INMP441 I²S mic (optional)** | Sound-reactive mode | 1 | Add in Week 4 (not needed for MVP) |
+| 9 | **Foam tape / low-tack adhesive** | Mount LED strip safely | 1 roll | Protects piano surface |
+
+> ⚠️ **Power tip:** Full-white can draw ~60 mA per LED. Keep brightness low and/or test short sections first. Always **share ground** between ESP32 and LED strip.
